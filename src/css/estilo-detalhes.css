@@ -1,0 +1,224 @@
+*,
+*::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.cabecalho .logo {
+  width: 100px;
+}
+
+.cabecalho .menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.cabecalho nav li a {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+.cabecalho nav li a:hover {
+  background-color: #f3e5ae;
+}
+
+.fundo-page {
+  width: max-content;
+  background-color: black;
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.fundo-page .imagem-page-detalhes {
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.fundo-page::after {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+}
+
+.container-detalhes {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+}
+
+section {
+  display: block;
+  block-size: fit-content;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 140px);
+  height: 100%;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+  scroll-margin-left: 140px;
+}
+section:nth-of-type(1) {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+
+  width: 100%;
+}
+section:nth-of-type(2) {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+section:nth-of-type(3) {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+section:nth-of-type(4) {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+section:nth-of-type(5) {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+section:nth-of-type(6) {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+section:nth-of-type(7) {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+section:nth-of-type(8) {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+section:nth-of-type(9) {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+section:nth-of-type(10) {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+h1 {
+  font-size: 2rem;
+  color: white;
+  display: flex;
+}
+h2 {
+  font-size: 1rem;
+  color: white;
+  display: grid;
+}
+
+p {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: columns;
+  margin-bottom: 0px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 1rem;
+  color: whitesmoke;
+  overflow-wrap: break-word;
+}
+ul,
+li {
+  color: white;
+  font-family: "Poppins";
+  font-weight: 300;
+  display: flexbox;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 16px;
+  font-size: 0.9 rem;
+}
+
+.bloco-texto-dinamico {
+  display: flexbox;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 18px;
+  font-size: 18px;
+}

@@ -1,0 +1,129 @@
+@media (max-width: 1200px) {
+  body {
+    font-family: "Poppins";
+    background-color: black;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    gap: 15px;
+  }
+
+  .fundo-pages {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    gap: 15px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: calc(100% - 800px);
+    height: 100%;
+    scroll-margin-left: 800px;
+  }
+
+  section p,
+  ul,
+  li {
+    font-size: 11px;
+  }
+  .bloco-texto-dinamico {
+    display: flexbox;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 16px;
+    font-size: 0.7rem;
+  }
+
+  .fundo-video {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    gap: 15px;
+  }
+  .container .seiya {
+    max-width: 50%;
+  }
+  .container .info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container .sinopse {
+    color: #ffffff;
+    text-align: center;
+  }
+  .container .sinopse {
+    color: #ffffff;
+    text-align: center;
+  }
+  .container .info-serie {
+    color: #ffffff;
+    text-align: center;
+  }
+  .container .botao-trailer {
+    background-color: #263238;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+  .cabecalho {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: calc(100% - 600px);
+    height: max-content;
+    scroll-margin-left: 600px;
+  }
+
+  .bloco-texto-dinamico {
+    display: flexbox;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 12px;
+    font-size: 12px;
+  }
+
+  .container .imagem-titulo {
+    max-width: 75%;
+  }
+
+  .container-page .imagem-titulo {
+    max-width: 30vh;
+  }
+
+  .modal .fechar-modal {
+    width: 30px;
+    line-height: 30px;
+  }
+  .modal #video {
+    width: 300px;
+    height: 169px;
+  }
+}
+@media (max-width: 500px) {
+  .modal #video {
+    width: 250px;
+    height: 140px;
+  }
+}
