@@ -7,7 +7,7 @@
 
 <p>Este site foi elaborado com base no Projeto Mario evento Semana do Zero ao Programador Contratado, mas com funcionalidades CSS e HTMl adicionais</p>
 A ideia é promover a nova temporada do anime Knights of Zodiac - Saint Seiya, e trazer curiosidades e inormações sobre a franquia 
-
+ veja funcionando aqui -> https://nonchalant-cough.surge.sh/
  
  ---------------------------------------------------------
 
